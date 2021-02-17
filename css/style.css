@@ -1,0 +1,76 @@
+/*Basic CSS Desing*/
+body{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: 600;
+}
+/*Box Sizing Optimizer*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1{
+  text-align: center;
+  margin:50px;
+}
+
+p{
+  clear: both;
+}
+
+#row1, #row2, #row3{
+  background-color: gray;
+  padding:20px;
+  margin: 10px;
+  float:left;
+  border-style: solid;
+  border-color: black;
+}
+
+#title{
+  float: right;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  top: -23px;
+  left: 23px;
+  border-style: solid;
+}
+
+.title1{
+  padding: 10px 50px 10px 50px;
+  background-color: pink;
+}
+
+.title2{
+  padding: 10px 80px 10px 80px;
+  background-color: red;
+  border-color: black;
+  color:white;
+}
+
+.title3{
+  padding: 10px 60px 10px 60px;
+  background-color: yellow;
+}
+
+
+
+/*Responsive CSS Desing Start*/
+@media (min-width: 992px) {
+  #row1, #row2, #row3{
+    width: 30%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+  #row1, #row2{
+    width: 47%;
+  }
+  #row3{
+    width: 96%;
+  }
+}
